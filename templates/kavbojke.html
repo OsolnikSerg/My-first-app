@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="navodila, kavbojke, kroj, krojenje, načrt šivanja">
+        <meta name="description" content="Spletna stran prikazuje postopek izdelave kavbojk. Pred šivanjem izpolnimo obrazec načrt šivanja kavbojk.">
+        <meta name="author" content="Sergeja Osolnik">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+        <title>šivaj si kavbojke</title>
+    </head>
+    <body>
+        <!--Navigacija-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navigacija">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="slike/logo_meni.png" alt="Ime strani" width="200"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="kavbojke.html">Kavbojke</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="majica.html">Majica</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>NAVODILA za šivanje kavbojk</h1>
+            <p style="text-align: center;">Zahtevnost:&starf;&starf;&starf;</p>
+        
+            <!--Vrtiljak slik-->
+            <div id="vrtiljak_kavbojke" class="container">
+                <div id="carouselExampleControlsNoTouching_index" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="slike/kavbojke/vrtiljak_kavbojke1.png" alt="Skica1" style="width: auto; height: 90%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="slike/kavbojke/vrtiljak_kavbojke2.png" alt="Skica2" style="width: auto; height: 90%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="slike/kavbojke/vrtiljak_kavbojke3.png" alt="Skica3" style="width: auto; height:100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="slike/kavbojke/vrtiljak_kavbojke4.png" alt="Skica4" style="width: auto; height:100%;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching_index" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching_index" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!--Navodila za šivanje-->
+        
+          <article id="pattern">
+                <h2>KROJ</h2>
+                <h4>Načrtuj!</h4>
+                <p>1. Najprej izbereš model, ki ga želiš zašiti. Spletne trgovine ponujajo veliko različnih krojev kavbojk. Verjetno za vsak okus nekaj: oprijete, široke, na zvonec, nizek ali visok pas, z elastanom ali brez. Kroj izbereš z nakupom iz spletnih trgovin ali revij.</p>
+                <p>2. Natisneš <a href="dokumentacija/Nacrtuj_kavbojke.pdf" style="color: rgb(249,191,157);">NAČRT ŠIVANJA KAVBOJK</a> in ga izpolniš pred nakupom blaga.</p>
+                <p>3. Pomeri se. Glede na svoje mere izberi velikost v tabeli mer. Pripravi kroj v svoji velikosti.</p>
+                <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                    <figure class="navodila">
+                        <img src="slike/kavbojke/kroj.jpg" alt="Krojenje na papir">
+                    </figure>
+                </div>
+                <p>4. Načrt krojenja: Kroje položiš na dodatno polo papirja. Vzameš širino papirja 70 cm (ker krojimo na prepognjeno širino blaga). Na papir položi krojne dele za hlače. Upoštevaj smer niti krojenja. Pomeri dolžino in fotografiraj. Kasneje boš z isto postavitvijo krojila na jeans blago.</p>
+                <p>5. Pomeri, koliko potrebuješ bombažne tkanine za žepni vrečki. Vpiši v načrt.</p>
+                <p>6. Preveri, kateri krojni deli se limajo z medvlogo. Ponavadi je to pas in zapenjanje pri hlačnicah. Pomeri in vpiši v načrt.</p>
+                <p class="pojasnilo">Zakaj medvloga? Na narobno stran vkrojenega pasu nalimaš medvlogo z likalnikom. Lepljiva stran medvloge je obrnjena proti blagu. Pas tako dobi čvrstost in obliko.</p>
+                <p>7. Potrebuješ še sukanec v barvi jeansa in sukanec za okrasne šive. Ponavadi so to rjavi odtenki, ki izstopajo na modrem jeansu.</p>
+                <p>8. Za zapenjanje potrebuješ gumb in zadrgo. Kupiš jeans gumb, ki ga pribiješ s kladivom. Dolžino zadrge pomeri na kroju.</p>
+          </article>
+          <article id="layplan">
+              <h2>KROJENJE</h2>
+              <p>1. Pred krojenjem pravilno zloži blago. Prepogneš po širini. Po dolžini se robova blaga stikata.<br>Prava stran blaga je na notranji strani. Narobna stran blaga je zunaj, ta stran blaga je obrnjena proti tebi.</p>
+              <p>2. Krojne dele polagamo na narobno stran blaga.</p>
+              <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                <figure class="navodila">
+                    <img src="slike/kavbojke/krojenje.png" alt="Prikaz zloženega blaga za krojenje">
+                </figure>
+                </div>
+              <p>Za pravilno polaganje krojnih delov na blago pomaga smer niti krojenja in rob pregiba blaga. Vsak krojni del mora imeti narisano smer niti ali označen pregib krojnega dela.</p>
+              <p class="pojasnilo">Smer niti krojenja je ravna linija in kaže orientacijo kroja na blagu. Z ravno linijo sledimo smeri osnovne niti na blagu (ali zančnemu stolpcu na pletivu). Pri tkaninah osnovna nit teče vzporedno z robom tkanine.</p>
+              <p class="pojasnilo">Pregib blaga je vzporeden z robom tkanine. Na pregib blaga se položijo krojni deli, ki imajo narisan pregib kroja.</p>
+              <p>3. Na krojnih delih preveri dodatek za šiv: je že vključen, je kroj brez dodatka za šiv? Ponudba krojev je zelo različna. Na kroju piše, če je dodatek za šiv že vključen in koliko (1,5cm, 0,6cm). Če dodatka za šiv ni, ga dodamo sami.</p>
+              <p class="pojasnilo">Dodatek za šiv je razdalja med šivom in robom krojnega dela.</p>
+              <h4>ŽEPNA VREČKA</h4>
+              <p>Žepne vrečke krojimo na bombažno tkanino, ki se ne razteguje.</p>
+              <h4>MEDVLOGA</h4>
+              <p>Izrezane krojne dele, ki se limajo, položiš direkt na medvlogo. Notranjo stran pasu položiš na lepljivo stran medvloge. Obrežeš krojni del. Ponavadi se limata oba krojna dela pasu in podložka za zadrgo.</p>
+              <p>Pri zapenjanju na sprednji hlačnici medvlogo krojiš samo na podložko za zapenjanje.</p>
+              <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                <figure class="navodila">
+                    <img src="slike/kavbojke/medvloga.jpg" alt="Prikaz krojenja podložke za zadrgo">
+                </figure>
+                </div>
+          </article>
+          <article id="sewingTutorial" class="sewing">
+                <h2>ŠIVANJE</h2>
+                <section id="0"><h4>Priprava na šivanje</h4>
+                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                        <figure class="navodila">
+                            <img src="slike/kavbojke/kavbojke1.jpg" alt="Material za šivanje" >
+                            <figcaption>Pred krojenjem in šivanjem preverimo, če imamo vse:<br>jeans tkanina,<br>bombažna tkanina za žepe,<br>medvloga,<br>jeans gumb,<br>zadrga,<br>klasični sukanci v barvi jeansa,<br>okrasni sukanec za okrasne šive,<br>igle za šivanje jeansa (80/12 ali 90/14).</figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section id="1"><h4>1.Medvloga</h4>
+                    <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                    <figure class="navodila">
+                        <img src="slike/kavbojke/kavbojke2.jpg" alt="Limanje centelina" >
+                        <figcaption>Medvlogo limamo na notranjo stran jeans tkanine.<br>Limamo pas in zapenjanje pri hlačnicah.</figcaption>
+                    </figure>
+                    </div>
+                </section>
+                <section id="2"><h4>2.Hlačnici zadaj</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.1</h6>
+                                <img src="slike/kavbojke/kavbojke3.jpg" alt="Hlačnica zadaj" >
+                                <figcaption>Sešijemo skupaj dva krojna dela zadnje hlačnice (sedlo in hlačnico):<br>raven šiv + overlock/cikcak.<br>Šiv zalikamo navzdol.&#8595;</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.2</h6>
+                                <img src="slike/kavbojke/kavbojke4.jpg" alt="Hlačnica zadaj" >
+                                <figcaption>Po licni strani hlačnice našijemo dva <strong>okrasna</strong> nadšiva.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.3</h6>
+                                <img src="slike/kavbojke/kavbojke5.jpg" alt="Žep zadaj" >
+                                <figcaption>Uporabljamo papirnato šablono za žepa zadaj. Najprej zalikamo zgornji rob žepa, tako da 2x zapognemo na notranjo stran blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.4</h6>
+                                <img src="slike/kavbojke/kavbojke6.jpg" alt="Žep zadaj" >
+                                <figcaption>Po licni strani žepov našijemo dva <strong>okrasna</strong> nadšiva.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.5</h6>
+                                <img src="slike/kavbojke/kavbojke7.jpg" alt="Žep zadaj" >
+                                <figcaption>S pomočjo šablone zalikamo robove žepa. Šablona nam omogoča, da izdelamo dva enaka žepa.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.6</h6>
+                                <img src="slike/kavbojke/kavbojke8.jpg" alt="Hlačnica zadaj" >
+                                <figcaption>S pomočjo kroja na zadnji hlačnici narišemo lego žepa na pravo stran blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.7</h6>
+                                <img src="slike/kavbojke/kavbojke9.jpg" alt="Hlačnica zadaj" >
+                                <figcaption>Žep našijemo z <strong>okrasnim</strong> sukancem na hlačnici.<br>Začnemo s šivanjem desno zgoraj.<br>Šiv zatrdimo na začetku in na koncu šivanja.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.8</h6>
+                                <img src="slike/kavbojke/kavbojke10.jpg" alt="Žep zadaj" >
+                                <figcaption>Pri šivanju podlagamo vogale z dodatnim koščkom blaga, da se tačka ne nagiba.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.9</h6>
+                                <img src="slike/kavbojke/kavbojke11.jpg" alt="Žep zadaj" >
+                                <figcaption>Podlaganje na vogalih prepreči zaustavljanje tačke.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.10</h6>
+                                <img src="slike/kavbojke/kavbojke12.jpg" alt="Žep zadaj" >
+                                <figcaption>Najprej šivamo zunanji šiv na žepu.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.11</h6>
+                                <img src="slike/kavbojke/kavbojke13.jpg" alt="Žep zadaj" >
+                                <figcaption>Nadaljujemo s šivanjem notranjega šiva.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.12</h6>
+                                <img src="slike/kavbojke/kavbojke14.jpg" alt="Hlačnice zadaj" >
+                                <figcaption>Na obe hlačnici zadaj našijemo žepa.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.13</h6>
+                                <img src="slike/kavbojke/kavbojke15.jpg" alt="Hlačnice zadaj" >
+                                <figcaption>Sešijemo skupaj obe hlačnici po notranji strani:<br>raven šiv + overlock/cikcak.<br>Zalikamo v desno.&#8594;</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>2.14</h6>
+                                <img src="slike/kavbojke/kavbojke16.jpg" alt="Hlačnice zadaj" >
+                                <figcaption>Po zunanji strani šivamo nadšiv z <strong>okrasnim</strong> sukancem.<br><em>Zaključili smo šivanje zadnjega dela in nadaljujemo s sestavljanjem sprednjih hlačnic.</em></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="3"><h4>3.Hlačnici spredaj</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.1</h6>
+                                <img src="slike/kavbojke/kavbojke17.jpg" alt="Mini žep desno spredaj" >
+                                <figcaption>Mini žep spredaj:<br>Krivuljo krojnega dela obzankamo z overlock/cikcak šivom.<br>Zgornji rob 2x zapognemo in zalikamo na narobno stran blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.2</h6>
+                                <img src="slike/kavbojke/kavbojke18.jpg" alt="Mini žep desno spredaj" >
+                                <figcaption>Našijemo dva okrasna šiva po pravi strani blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.3</h6>
+                                <img src="slike/kavbojke/kavbojke19.jpg" alt="Mini žep desno spredaj" >
+                                <figcaption>Stranski rob žepa zalikamo navznoter.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.4</h6>
+                                <img src="slike/kavbojke/kavbojke20.jpg" alt="Mini žep desno spredaj" >
+                                <figcaption>Krivuljo krojnega dela obzankamo z overlock/cikcak šivom.<br>Mini žep položimo na desni krojni del sprednjega žepa.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.5</h6>
+                                <img src="slike/kavbojke/kavbojke21.jpg" alt="Mini žep desno spredaj" >
+                                <figcaption>Žep našijemo z <strong>okrasnim</strong> sukancem.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.6</h6>
+                                <img src="slike/kavbojke/kavbojke22.jpg" alt="Žep spredaj" >
+                                <figcaption>Sprednji del žepa iz jeansa:<br>Krojni del iz jeansa našijemo na bombažno žepovino (žepno vrečko) na <strong>narobno stran blaga</strong>.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.7</h6>
+                                <img src="slike/kavbojke/kavbojke23.jpg" alt="Žep spredaj" >
+                                <figcaption>Bombažno žepovino (žepno vrečko) položimo na sprednjo hlačnico.<br>Prava stran jeansa je obrnjena proti nam.<br>Tudi prava stran žepovine je obrnjena proti nam.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.8</h6>
+                                <img src="slike/kavbojke/kavbojke24.jpg" alt="Žep spredaj" >
+                                <figcaption>Žepno vrečko položimo tako, da se ujemata krivulji žepa. Zašijemo šiv po krivulji žepa.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.9</h6>
+                                <img src="slike/kavbojke/kavbojke25.jpg" alt="Žep spredaj" >
+                                <figcaption>Zarežemo s škarjami in zalikamo žepovino.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.10</h6>
+                                <img src="slike/kavbojke/kavbojke26.jpg" alt="Žep spredaj" >
+                                <figcaption>Žepno vrečko obrnemo okoli krivulje in polikamo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.11</h6>
+                                <img src="slike/kavbojke/kavbojke27.jpg" alt="Žep spredaj" >
+                                <figcaption>Našijemo dva <strong>okrasna</strong> šiva po krivulji žepa.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.12</h6>
+                                <img src="slike/kavbojke/kavbojke28.jpg" alt="Žep spredaj" >
+                                <figcaption>Obrnemo hlačnico okoli, tako da je narobna stran blaga obrnjena proti nam.<br>Zapognemo žepno vrečko na pol. Na stranskem delu se robovi stikajo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>3.13</h6>
+                                <img src="slike/kavbojke/kavbojke29.jpg" alt="Žep spredaj" >
+                                <figcaption>(1) Zašijemo žepno vrečko na dolžini: raven šiv + overlock/cikcak.<br>(2) Na stranskem delu žepno vrečko prišijemo na hlačnico: raven šiv.<br>(3) Tudi v pasni liniji prišijemo žep na hlačnico: raven šiv.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="4"><h4>4.Zapenjanje z zadrgo</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.1</h6>
+                                <img src="slike/kavbojke/kavbojke30.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Sešijemo skupaj obe sprednji hlačnici po krivulji. <em>Ko bo zadrga všita, bomo del šiva odparali.</em></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.2</h6>
+                                <img src="slike/kavbojke/kavbojke31.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zarežemo s škarjami do točke, kamor bo segala zadrga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.3</h6>
+                                <img src="slike/kavbojke/kavbojke32.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Razlikamo zapenjanje.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.4</h6>
+                                <img src="slike/kavbojke/kavbojke33.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Hlačnici položimo skupaj na &#8592;levo stran. Del ki smo ga polikali, pa ostane narazen.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.5</h6>
+                                <img src="slike/kavbojke/kavbojke34.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zobci zadrge naj pokrivajo razlikan šiv, torej so na sredini. Dolžina zobcev pa sega do zareze. Zašijemo po desni strani zadrge.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.6</h6>
+                                <img src="slike/kavbojke/kavbojke36.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Obrnemo zadrgo, da gleda proti nam.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.7</h6>
+                                <img src="slike/kavbojke/kavbojke37.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zašijemo po robu, ki smo ga obrnili.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.8</h6>
+                                <img src="slike/kavbojke/kavbojke38.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Razpremo hlačnici. <strong> Vidimo, da zobci zadrge niso več na sredini. Prišili bomo zadrgo še na drugo stran.</strong></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.9</h6>
+                                <img src="slike/kavbojke/kavbojke39.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Hlačnici položimo skupaj na &#8594;desno stran.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.10</h6>
+                                <img src="slike/kavbojke/kavbojke40.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zašijemo šiv po levi strani zadrge.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.11</h6>
+                                <img src="slike/kavbojke/kavbojke41.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Razpremo hlačnici. <strong>Sedaj imamo prišito zadrgo.</strong></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.12</h6>
+                                <img src="slike/kavbojke/kavbojke42.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Šivanje zapenjanja z zadrgo nadaljujemo na zunanji strani kavbojk.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.13</h6>
+                                <img src="slike/kavbojke/kavbojke43.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Narišemo obliko zapenjanja spredaj. Dve krivulji, po katerih bomo šivali.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.14</h6>
+                                <img src="slike/kavbojke/kavbojke44.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Šivamo z <strong>okrasnim</strong> sukancem.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.15</h6>
+                                <img src="slike/kavbojke/kavbojke45.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Nadaljujemo s podlaganjem zadrge na notranji strani kavbojk.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.16</h6>
+                                <img src="slike/kavbojke/kavbojke46.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Pripravimo podložko za zadrgo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.17</h6>
+                                <img src="slike/kavbojke/kavbojke47.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Prepognemo na pol in polikamo. Spodnji rob obzankamo: overlock/cikcak.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.18</h6>
+                                <img src="slike/kavbojke/kavbojke48.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Podložko položimo na zadrgo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.19</h6>
+                                <img src="slike/kavbojke/kavbojke49.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Hlačnici zložimo skupaj na &#8592;levo stran. Podložko prišijemo na desno stran zapenjanja.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.20</h6>
+                                <img src="slike/kavbojke/kavbojke50.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Odrežemo odvečni košček, ki ostane od zapenjanja. Obzankamo desni rob podložke skupaj s prišitim delom: overlock/cikcak.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.21</h6>
+                                <img src="slike/kavbojke/kavbojke51.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Odparamo zadrgo do nadšiva.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.22</h6>
+                                <img src="slike/kavbojke/kavbojke52.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Odpremo in zapremo zadrgo. Kontrola, da smo pravilno zašili.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.23</h6>
+                                <img src="slike/kavbojke/kavbojke53.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zašijemo nadšiv z <strong>okrasnim</strong> sukancem po hlačnici od razkoraka navzgor do okrasnega šiva in nazaj.<br><em>S tem fiksiramo podložko za zadrgo na notranji strani.</em></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>4.24</h6>
+                                <img src="slike/kavbojke/kavbojke54.jpg" alt="Zapenjanje z zadrgo" >
+                                <figcaption>Zatrdimo dvakrat z drobnim cik-cak šivom (klasičen sukanec).<br><em>S tem preprečimo paranje okrasnih šivov in dodatno fiksiramo podložko na hlače.</em><br><strong>Šivanje zadrge je končano.</strong></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="5"><h4>5.Združevanje hlačnic</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>5.1</h6>
+                                <img src="slike/kavbojke/kavbojke55.jpg" alt="Sestavljanje hlačnic" >
+                                <figcaption>Skupaj sešijemo zadnji in sprednji hlačnici.<br>Sprednji del hlač položimo na zadnji del hlač tako, da se stika prava stran blaga.<br>Proti nam je obrnjena narobna stran blaga sprednjih dveh hlačnic.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>5.2</h6>
+                                <img src="slike/kavbojke/kavbojke56.jpg" alt="Sestavljanje hlačnic" >
+                                <figcaption>Položimo sprednje in zadnje hlačnice skupaj tako, da se ujema notranji šiv hlačnic.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>5.3</h6>
+                                <img src="slike/kavbojke/kavbojke57.jpg" alt="Sestavljanje hlačnic" >
+                                <figcaption>Zašijemo hlačnice: raven sestavni šiv + overlock/cikcak.<br>Šivamo od konca ene hlačnice navzgor&#8593;, do sredine in navzdol&#8595; do konca po drugi hlačnici.<br>Zalikamo šiv proti zadnjemu delu hlač. Zalikamo po narobni strani in po pravi strani blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>5.4</h6>
+                                <img src="slike/kavbojke/kavbojke58.jpg" alt="Sestavljanje hlačnic" >
+                                <figcaption>Sešijemo še zunanji šiv hlačnic. Šivamo od pasu navzdol.<br>Polikamo šiv proti zadnji strani hlač. Prav tako likamo po obeh straneh blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>5.5</h6>
+                                <img src="slike/kavbojke/kavbojke59.jpg" alt="Sestavljanje hlačnic" >
+                                <figcaption>Po licni strani na bokih hlač naredimo nadšiv. Šivamo z <strong>okrasnim</strong> sukancem po zadnji hlačnici do konca žepne vrečke.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="6"><h4>6.Šivanje pasu</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.1</h6>
+                                <img src="slike/kavbojke/kavbojke60.jpg" alt="Pas" >
+                                <figcaption>Pripravimo dva krojna dela pasu, ki sta po narobni strani blaga polimana z medvlogo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.2</h6>
+                                <img src="slike/kavbojke/kavbojke61.jpg" alt="Pas" >
+                                <figcaption>Vstavimo pas v hlače.<br>En pas vstavimo na notranjo stran.<br>Sledimo oznakam, ki jih dobimo na kroju pasu: sredina zadaj, stranski šiv, sredina spredaj.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.3</h6>
+                                <img src="slike/kavbojke/kavbojke62.jpg" alt="Pas" >
+                                <figcaption>Drug pas vstavimo na zunanjo stran.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.4</h6>
+                                <img src="slike/kavbojke/kavbojke63.jpg" alt="Pas" >
+                                <figcaption>Najprej s kratkim šivom pritrdimo pasova na hlače na pomembnih točkah: sredina zadaj, stranski šiv, sredina spredaj.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.5</h6>
+                                <img src="slike/kavbojke/kavbojke64.jpg" alt="Pas" >
+                                <figcaption>Nato narišemo konec pasu spredaj, če imamo daljši krojni del. Odvisno od kroja.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.6</h6>
+                                <img src="slike/kavbojke/kavbojke65.jpg" alt="Pas" >
+                                <figcaption>Prišijemo pas na hlače.<br>Šivamo po narobni strani pasu.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.7</h6>
+                                <img src="slike/kavbojke/kavbojke66.jpg" alt="Pas" >
+                                <figcaption>Odrežemo odvečno blago.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.8</h6>
+                                <img src="slike/kavbojke/kavbojke67.jpg" alt="Pas" >
+                                <figcaption>Obrnemo pas navzgor&#8593;, na pravo stran blaga in polikamo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.9</h6>
+                                <img src="slike/kavbojke/kavbojke68.jpg" alt="Pas" >
+                                <figcaption>Zgornji rob pasu zalikamo navznoter. Na obeh krojnih delih pasu.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.10</h6>
+                                <img src="slike/kavbojke/kavbojke69.jpg" alt="Pas" >
+                                <figcaption>Z <strong>okrasnim</strong> sukancem šivamo nadšiv po pasu. Začnemo na sredini zadaj. </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.11</h6>
+                                <img src="slike/kavbojke/kavbojke70.jpg" alt="Pas" >
+                                <figcaption>Vogale si podlagamo z dodatnim koščkom, da se tačka ne upogiba.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>6.12</h6>
+                                <img src="slike/kavbojke/kavbojke71.jpg" alt="Pas" >
+                                <figcaption>Na koncu pas še polikamo.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="7"><h4>7.Pasne zanke</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.1</h6>
+                                <img src="slike/kavbojke/kavbojke72.jpg" alt="Pasne zanke" >
+                                <figcaption>Dolg trak blaga dvakrat enakomerno prepognemo in polikamo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.2</h6>
+                                <img src="slike/kavbojke/kavbojke73.jpg" alt="Pasne zanke" >
+                                <figcaption>En rob traku obzankamo z overlockom/cikcakom.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.3</h6>
+                                <img src="slike/kavbojke/kavbojke74.jpg" alt="Pasne zanke" >
+                                <figcaption>Pošijemo cikcak z <strong>okrasnim</strong> sukancem.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.4</h6>
+                                <img src="slike/kavbojke/kavbojke75.jpg" alt="Pasne zanke" >
+                                <figcaption>Razrežemo na 5 enakih delov dolžine 9 cm.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.5</h6>
+                                <img src="slike/kavbojke/kavbojke76.jpg" alt="Pasne zanke" >
+                                <figcaption>Pasne zanke prišijemo z drobnim cik-cak šivom. Na dodatnem koščku testiramo sukanec, cik-cak šiv in plasti blaga.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.6</h6>
+                                <img src="slike/kavbojke/kavbojke77.jpg" alt="Pasne zanke" >
+                                <figcaption>Našijemo pasne zanke: spredaj pri sprednjem žepu...</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>7.7</h6>
+                                <img src="slike/kavbojke/kavbojke78.jpg" alt="Pasne zanke" >
+                                <figcaption>...na vogalu zadnjih žepov in na sredini zadaj.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="8"><h4>8.Zatrditveni kratki šivi</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>8.1</h6>
+                                <img src="slike/kavbojke/kavbojke79.jpg" alt="Zatrjevanje žepov" >
+                                <figcaption>Zatrjevanje žepov in stranskega šiva, s cik-cak šivom. <em>Pomagamo si s podlaganjem tačke z dodatnim koščkom blaga.</em></figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>8.2</h6>
+                                <img src="slike/kavbojke/kavbojke80.jpg" alt="Zatrjevanje žepov" >
+                                <figcaption>Z zatrditvenimi šivi zaščitimo šive pred paranjem.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>8.3</h6>
+                                <img src="slike/kavbojke/kavbojke81.jpg" alt="Zatrjevanje žepov" >
+                                <figcaption>Zatrjujemo z drobnih cikcak šivom s klasičnim sukancem v barvi jeansa.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="9"><h4>9.Gumb in gumbnica</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila">
+                                <img src="slike/kavbojke/kavbojke82.jpg" alt="Gumb in gumbnica" >
+                                <figcaption>Izdelava gumbnice in vstavljanje gumba.<br>Gumbnico prej obvezno testiramo na dodatnem koščku.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="10"><h4>10.Dolžina hlačnic</h4>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>10.1</h6>
+                                <img src="slike/kavbojke/kavbojke83.jpg" alt="Dolžina hlač" >
+                                <figcaption>S pomerjanjem hlač določimo dolžino hlačnic.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>10.2</h6>
+                                <img src="slike/kavbojke/kavbojke84.jpg" alt="Dolžina hlač" >
+                                <figcaption>Dvakrat zapognemo in polikamo.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+                            <figure class="navodila"><h6>10.3</h6>
+                                <img src="slike/kavbojke/kavbojke85.jpg" alt="Dolžina hlač" >
+                                <figcaption>Zarobimo z <strong>okrasnim</strong> sukancem.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                
+            </article>
+        </div>
+        <footer>
+            <p>Na vrh <a href="#navigacija" style="color: rgb(249,191,157);">&uArr;</a></p>
+            <p>Vprašanja so vedno dobrodošla, pišite na <a href="mailto:info@šivaj.si" style="color: rgb(249,191,157);">info@šivaj.si</a></p>
+            <p>&copy; šivaj.si Vse pravice pridržane.</p>
+        </footer>
+        
+        <!--Scroll back to top button-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uArr;</button>
+        <script src="javascript.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>

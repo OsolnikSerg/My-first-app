@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="šivaj si, sešij, ustvarjaj, šivanje, hobi, stil, kreativnost, izdelaj, oblačila, navodila, kavbojke, majica, videz, naredi si, tečaj, motivirati, kroj, krojenje, načrtuj, načrt šivanja">
+    <meta name="description" content="Spletna stran prikazuje postopke izdelave oblačil in motivira h šivanju.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+    <title>šivaj si</title>
+  </head>
+    <body>
+        <!--Navigacija-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navigacija">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="../static/slike/logo_meni.png" alt="Ime strani" width="200"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kavbojke.html">Kavbojke</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="majica.html">Majica</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      <!--Vrtiljak slik za prvo stran-->
+      <div id="vrtiljak_index" class="container">
+        <div id="carouselExampleControlsNoTouching_index" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="../static/slike/index/vrtiljak1.png" alt="Zvezde" style="width: auto; height: 100%;">
+                  <div class="carousel-caption d-block">
+                    <h1>Bodi zvezda in ustvarjaj.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="../static/slike/index/vrtiljak2.png" alt="Hiša" style="width: auto; height: 80%;">
+                  <div class="carousel-caption d-block">
+                    <h1>Šivanje je ustvarjalen hobi.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="../static/slike/index/vrtiljak3.png" alt="Sladoled" style="width: auto; height:100%">
+                  <div class="carousel-caption d-block">
+                    <h1>Osveži svoj stil s šivanjem.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="../static/slike/index/vrtiljak4.png" alt="Škarje" style="width: auto; height:100%">
+                  <div class="carousel-caption d-block">
+                    <h1>Izrazi kreativnost z izdelavo oblačil.</h1>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="../static/slike/index/vrtiljak5.png" alt="Kava" style="width: auto; height: 100%;">
+                  <div class="carousel-caption d-block">
+                    <h1>Ob skodelici kave ali čaja izdelaj svoja najljubša oblačila.</h1>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching_index" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching_index" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!--Pozdrav-->
+      <div class="pozdrav">
+        <p>Dobrodošli na spletni strani šivaj.si!</p>
+        <p>Vsebina spodbuja h kreativnosti.</p>
+        <p>Na tečajih učim začetnice šivanja oblačil. S spletnimi vsebinami pa želim motivirati h izdelavi zahtevnejših kosov.</p>
+        <p>Predstavljen je postopek izdelave kavbojk. Pokaži znanje šivanja in izdelaj svoje kavbojke.</p>
+        <p>Majica s 4 rokavi se nosi na več načinov. Skozi dan lahko majico le drugače prevežete in nastane nov videz. Naredi si razgiban dan.</p>
+        <div class="slikaavtorice">
+          <img src="../static/slike/index/avtorica.png" alt="Slika avtorice" style="width: 100%;">
+        </div>
+      </div>
+
+      <footer>
+        <p>Na vrh <a href="#navigacija" style="color: rgb(249,191,157);">&uArr;</a></p>
+        <p>Vprašanja so vedno dobrodošla, pišite na <a href="mailto:info@šivaj.si" style="color: rgb(249,191,157);">info@šivaj.si</a></p>
+        <p>&copy; šivaj.si Vse pravice pridržane.</p>
+      </footer>
+      
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    </body>
+</html>
